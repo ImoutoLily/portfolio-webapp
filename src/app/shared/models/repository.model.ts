@@ -1,6 +1,6 @@
 export interface Repository {
   name: string;
   description: string;
-  url: string;
+  svn_url: string;
   topics: string[];
 }
