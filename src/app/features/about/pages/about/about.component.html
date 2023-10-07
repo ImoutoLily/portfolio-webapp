@@ -15,46 +15,19 @@
   <div class="group">
     <h3>Skills</h3>
     <mat-list>
-      <mat-list-item class="mat-list-item">C</mat-list-item>
-      <mat-list-item class="mat-list-item">Python</mat-list-item>
-      <mat-list-item class="mat-list-item">Java</mat-list-item>
-      <mat-list-item class="mat-list-item">JavaScript / TypeScript</mat-list-item>
-      <mat-list-item class="mat-list-item">C#</mat-list-item>
-      <mat-list-item class="mat-list-item">Swift</mat-list-item>
-      <mat-list-item class="mat-list-item">Kotlin</mat-list-item>
-      <mat-list-item class="mat-list-item">PHP</mat-list-item>
-      <mat-list-item class="mat-list-item">SQL</mat-list-item>
-
-      <mat-list-item class="mat-list-item">ASP.NET</mat-list-item>
-      <mat-list-item class="mat-list-item">Spring Boot</mat-list-item>
-      <mat-list-item class="mat-list-item">Laravel</mat-list-item>
-      <mat-list-item class="mat-list-item">Angular</mat-list-item>
-      <mat-list-item class="mat-list-item">React</mat-list-item>
-      <mat-list-item class="mat-list-item">GraphQL</mat-list-item>
-      <mat-list-item class="mat-list-item">FastAPI</mat-list-item>
-      <mat-list-item class="mat-list-item">Express</mat-list-item>
-
-      <mat-list-item class="mat-list-item">MongoDB</mat-list-item>
-      <mat-list-item class="mat-list-item">Node.js</mat-list-item>
-      <mat-list-item class="mat-list-item">Git</mat-list-item>
-      <mat-list-item class="mat-list-item">Docker</mat-list-item>
-
-      <mat-list-item class="mat-list-item">Windows</mat-list-item>
-      <mat-list-item class="mat-list-item">Linux / Unix</mat-list-item>
+      <mat-list-item class="mat-list-item" *ngFor="let skill of skills">{{ skill }}</mat-list-item>
     </mat-list>
   </div>
   <div class="group">
     <h3>Experience</h3>
     <mat-list>
-      <mat-list-item class="mat-list-item">Full stack development at FOD Economie</mat-list-item>
-      <mat-list-item class="mat-list-item">Teacher assistant at CodeFever</mat-list-item>
+      <mat-list-item class="mat-list-item" *ngFor="let experience of experiences">{{ experience }}</mat-list-item>
     </mat-list>
   </div>
   <div class="group">
     <h3>Education</h3>
     <mat-list>
-      <mat-list-item class="mat-list-item">Associate degree of Programming</mat-list-item>
-      <mat-list-item class="mat-list-item">Bachelor of Applied Computer Science (ongoing)</mat-list-item>
+      <mat-list-item class="mat-list-item" *ngFor="let education of educations">{{ education }}</mat-list-item>
     </mat-list>
   </div>
 </div>
