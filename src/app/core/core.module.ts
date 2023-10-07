@@ -5,15 +5,18 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { HttpClientModule } from "@angular/common/http";
 import { RouterLink } from "@angular/router";
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
 @NgModule({
   declarations: [
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
