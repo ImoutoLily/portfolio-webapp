@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router";
 import { HomeRoutingModule } from "./features/home/home-routing.module";
 import { AboutRoutingModule } from "./features/about/about-routing.module";
+import { ProjectsRoutingModule } from "./features/projects/projects-routing.module";
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: "about",
     loadChildren: () => AboutRoutingModule
+  },
+  {
+    path: "projects",
+    loadChildren: () => ProjectsRoutingModule
   },
   { path: "**", redirectTo: "/", pathMatch: "full" }
 ];
