@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
+import { HttpClientModule } from "@angular/common/http";
 
 
 
@@ -15,6 +16,7 @@ import { MatButtonModule } from "@angular/material/button";
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
     MatToolbarModule,
     MatButtonModule
   ]

@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router";
-import { HomeRoutingModule } from "./features/home/home-routing.module";
-import { AboutRoutingModule } from "./features/about/about-routing.module";
-import { ProjectsRoutingModule } from "./features/projects/projects-routing.module";
 
 const routes: Routes = [
   {
     path: "",
-    loadChildren: () => HomeRoutingModule
+    loadChildren: () => import("./features/home/home.module")
+      .then(m => m.HomeModule)
   },
   {
     path: "about",
-    loadChildren: () => AboutRoutingModule
+    loadChildren: () => import("./features/about/about.module")
+      .then(m => m.AboutModule)
   },
   {
     path: "projects",
-    loadChildren: () => ProjectsRoutingModule
+    loadChildren: () => import("./features/projects/projects.module")
+      .then(m => m.ProjectsModule)
   },
   { path: "**", redirectTo: "/", pathMatch: "full" }
 ];
