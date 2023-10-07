@@ -1,0 +1,19 @@
+div.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+app-project-item {
+  flex: 0 0 33%;
+}
+
+@media (max-width: 1200px) {
+  app-project-item {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 1000px) {
+  app-project-item {
+    flex: 0 0 100%;
+  }
+}

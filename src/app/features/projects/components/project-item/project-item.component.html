@@ -1,1 +1,13 @@
-<p>{{ repository.name }}</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ repository.name }}</mat-card-title>
+    <mat-card-subtitle>{{ repository.topics.join(", ") }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{ repository.description }}</p>
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <mat-card-actions>
+    <a mat-button href="{{ repository.url }}">OPEN</a>
+  </mat-card-actions>
+</mat-card>
