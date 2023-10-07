@@ -2,14 +2,19 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { Repository } from "../../shared/models/repository.model";
+import { environment } from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectsService {
-  constructor(private http: HttpClient) { }
+  private readonly url: string;
+
+  constructor(private http: HttpClient) {
+    this.url = `https://api.github.com/users/${environment.githubUsername}/repos`;
+  }
 
   getRepositories(): Observable<Repository[]> {
-    return this.http.get<Repository[]>("https://api.github.com/users/ImoutoLily/repos");
+    return this.http.get<Repository[]>(this.url);
   }
 }
