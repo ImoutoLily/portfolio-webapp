@@ -4,6 +4,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { HttpClientModule } from "@angular/common/http";
+import { RouterLink } from "@angular/router";
 
 
 
@@ -18,7 +19,8 @@ import { HttpClientModule } from "@angular/common/http";
     CommonModule,
     HttpClientModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterLink
   ]
 })
 export class CoreModule { }
