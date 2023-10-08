@@ -15,16 +15,16 @@ export class AppComponent {
     private domSanitizer: DomSanitizer
     ) {
     this.matIconRegistry.addSvgIcon(
-      "discord",
-      this.domSanitizer.bypassSecurityTrustResourceUrl("assets/icons/discord-mark-white.svg")
-    );
-    this.matIconRegistry.addSvgIcon(
       "github",
       this.domSanitizer.bypassSecurityTrustResourceUrl("assets/icons/github-mark-white.svg")
     );
     this.matIconRegistry.addSvgIcon(
       "linkedin",
       this.domSanitizer.bypassSecurityTrustResourceUrl("assets/icons/in-white.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      "facebook",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("assets/icons/facebook-white.svg")
     );
   }
 }
