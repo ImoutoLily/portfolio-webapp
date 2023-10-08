@@ -3,8 +3,30 @@
 @import "../../../../styles";
 @import '@angular/material/theming';
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
 div.footer {
   width: 100dvw;
-  height: 125px;
+  height: 110px;
+  padding: 15px 0;
   background-color: mat.get-color-from-palette($portfolio-primary, 500);
+  display: flex;
+  justify-content: space-around;
+
+  div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    div.row {
+      height: 33%;
+
+      * {
+        color: white;
+      }
+    }
+  }
 }
