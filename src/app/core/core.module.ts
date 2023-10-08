@@ -6,6 +6,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { HttpClientModule } from "@angular/common/http";
 import { RouterLink } from "@angular/router";
 import { FooterComponent } from './components/footer/footer.component';
+import { MatIconModule } from "@angular/material/icon";
 
 
 
@@ -23,7 +24,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HttpClientModule,
     MatToolbarModule,
     MatButtonModule,
-    RouterLink
+    RouterLink,
+    MatIconModule
   ]
 })
 export class CoreModule { }
