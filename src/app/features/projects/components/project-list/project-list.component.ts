@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from "rxjs";
-import { Repository } from "../../../../shared/models/repository.model";
-import { ProjectsService } from "../../../../core/services/projects.service";
+import { Repository } from "@shared/models/repository.model";
+import { ProjectsService } from "@services/projects.service";
 
 @Component({
   selector: 'app-project-list',

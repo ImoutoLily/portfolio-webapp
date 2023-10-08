@@ -7,7 +7,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { RouterLink } from "@angular/router";
 import { FooterComponent } from './components/footer/footer.component';
 import { MatIconModule } from "@angular/material/icon";
-import { EnsureModuleLoadedOnceGuard } from "./guards/ensure-module-loaded-once.guard";
+import { EnsureModuleLoadedOnceGuard } from "@guards/ensure-module-loaded-once.guard";
 
 
 

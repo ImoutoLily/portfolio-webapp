@@ -4,17 +4,17 @@ import { RouterModule, Routes } from "@angular/router";
 const routes: Routes = [
   {
     path: "",
-    loadChildren: () => import("./features/home/home.module")
+    loadChildren: () => import("@features/home/home.module")
       .then(m => m.HomeModule)
   },
   {
     path: "about",
-    loadChildren: () => import("./features/about/about.module")
+    loadChildren: () => import("@features/about/about.module")
       .then(m => m.AboutModule)
   },
   {
     path: "projects",
-    loadChildren: () => import("./features/projects/projects.module")
+    loadChildren: () => import("@features/projects/projects.module")
       .then(m => m.ProjectsModule)
   },
   { path: "**", redirectTo: "/", pathMatch: "full" }

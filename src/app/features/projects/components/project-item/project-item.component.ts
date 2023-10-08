@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Repository } from "../../../../shared/models/repository.model";
+import { Repository } from "@shared/models/repository.model";
 
 @Component({
   selector: 'app-project-item',
