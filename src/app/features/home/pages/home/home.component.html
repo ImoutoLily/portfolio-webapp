@@ -1,10 +1,13 @@
 <div class="center">
   <div class="intro">
-    <h1>Hi, I am Lily.</h1>
+    <h1 id="into-title">Hi, I am <span class="primary-color">Lily</span>.</h1>
     <p>
-      I'm a passionate full stack software developer with a primary focus on back end.
+      I'm a passionate full stack software developer with a primary focus on back end. <br>
+      I also am a really big Linux enthusiast and love learning any new technology I can.
     </p>
   </div>
-  <button mat-raised-button color="primary">My projects</button>
-  <button mat-raised-button color="accent">About me</button>
+  <a mat-raised-button color="primary" [routerLink]="'/projects'">My projects</a>
+  <a mat-raised-button color="primary" [routerLink]="'/about'">About me</a>
+  <br>
+  <a mat-raised-button color="accent" href="#">&lt;/Source code&gt;</a>
 </div>
