@@ -8,11 +8,14 @@
 
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
+  border-radius: 36px;
+  margin: 0 5px;
 }
 
 #navbar-title {
   font-size: 16pt;
   font-weight: 600;
+  margin-left: 5px;
 }
 
 mat-toolbar {
