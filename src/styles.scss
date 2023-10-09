@@ -12,15 +12,40 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$portfolio-primary: mat.define-palette(mat.$deep-orange-palette);
-$portfolio-accent: mat.define-palette(mat.$blue-palette);
+$portfolio-primary: mat.define-palette(mat.$blue-palette);
+$portfolio-accent: mat.define-palette((
+  50: #fce3f1,
+  100: #f7b9db,
+  200: #f48ac3,
+  300: #f357aa,
+  400: #f32194,
+  500: #f5007e,
+  600: #e3007a,
+  700: #cc0073,
+  800: #b6006f,
+  900: #8d0066,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white
+  )
+));
 
 // The warn palette is optional (defaults to red).
 $portfolio-warn: mat.define-palette(mat.$red-palette);
 
+$portfolio-background: mat.define-palette(mat.$blue-gray-palette);
+
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$portfolio-theme: mat.define-light-theme((
+$portfolio-theme: mat.define-dark-theme((
   color: (
     primary: $portfolio-primary,
     accent: $portfolio-accent,
@@ -31,6 +56,7 @@ $portfolio-theme: mat.define-light-theme((
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
+//@include mat.core-theme($portfolio-theme);
 @include mat.all-component-themes($portfolio-theme);
 
 /* You can add global styles to this file, and also import other style files */
@@ -39,6 +65,7 @@ html, body { height: 100%; }
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: mat.get-color-from-palette($portfolio-background, 900);
 }
 
 app-root {
@@ -56,6 +83,14 @@ h3 {
   font-weight: 300;
 }
 
-body {
-  background-color: mat.get-color-from-palette(mat.$blue-grey-palette, 50);
+h1, h2, h3, h4, h5, h6, h7, p {
+  color: white;
+}
+
+mat-card-title {
+  color: white;
+}
+
+mat-card {
+  background-color: mat.get-color-from-palette($portfolio-background, 800) !important;
 }
