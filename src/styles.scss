@@ -91,6 +91,6 @@ mat-card-title {
   color: white;
 }
 
-mat-card {
+mat-card, mat-chip {
   background-color: mat.get-color-from-palette($portfolio-background, 800) !important;
 }
