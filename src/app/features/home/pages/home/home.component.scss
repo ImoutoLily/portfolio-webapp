@@ -1,13 +1,13 @@
 @use '@angular/material' as mat;
 
-@import "../../../../../styles";
+@import "styles";
 
 div.center {
   text-align: center;
-
-  div.intro {
-    margin-bottom: 30px;
-  }
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
 
   a {
     margin: 0 5px 15px 5px;
@@ -25,4 +25,8 @@ div.center {
 
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
+}
+
+div.intro {
+  margin-bottom: 30px;
 }
