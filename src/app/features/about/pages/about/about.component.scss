@@ -1,18 +1,39 @@
 div.info {
   display: flex;
   flex-direction: row;
+}
 
-  div.group {
-    flex: 1 1 0;
-  }
+div.column {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+div.intro {
+  flex-grow: 3;
+  padding-right: 75px;
+  text-align: justify;
+}
+
+div.chips {
+  flex-grow: 2;
 }
 
 .mat-list-item {
   height: 26px !important;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   div.info {
     flex-direction: column;
   }
+
+  div.intro {
+    padding-right: 0;
+  }
+}
+
+mat-chip {
+  height: 24px;
+  font-size: 12pt;
 }

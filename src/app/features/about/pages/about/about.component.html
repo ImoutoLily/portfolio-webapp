@@ -1,35 +1,38 @@
-<h1>About me</h1>
-<p>
-  Hello, I'm Lily Vandenbore and I'm a passionate software developer who has been
-  programming since the age of 11.<br>
-  I've always been eager to try and learn technologies to become a better developer.<br><br>
-
-  I am currently studying at VIVES Kortrijk to get a bachelor degree in Applied Computer Science and
-  will graduate in 2024.<br><br>
-
-  My passion for software development and geeky computer things also makes me love helping friends
-  and people I meet online to both program, and to help those who can program become even better.
-  This is why I'm currently working a student job at CodeFever as a teacher assistant.
-</p>
-
 <div class="info">
-  <div class="group">
-    <h3>Skills</h3>
-    <mat-chip-set>
-      <mat-chip *ngFor="let skill of skills">{{ skill }}</mat-chip>
-    </mat-chip-set>
+  <div class="column intro">
+    <h1>About me</h1>
+    <p>
+      Hello, I'm Lily Vandenbore and I'm a passionate software developer who has been
+      programming since the age of 11.<br>
+      I've always been eager to try and learn technologies to become a better developer.<br><br>
+
+      I am currently studying at VIVES Kortrijk to get a bachelor degree in Applied Computer Science and
+      will graduate in 2024.<br><br>
+
+      My passion for software development and geeky computer things also makes me love helping friends
+      and people I meet online to both program, and to help those who can program become even better.
+      This is why I'm currently working a student job at CodeFever as a teacher assistant.
+    </p>
   </div>
-  <div class="group">
-    <h3>Experience</h3>
-    <mat-chip-set>
-      <mat-chip *ngFor="let experience of experiences">{{ experience }}</mat-chip>
-    </mat-chip-set>
-  </div>
-  <div class="group">
-    <h3>Education</h3>
-    <mat-chip-set>
-      <mat-chip *ngFor="let education of educations">{{ education }}</mat-chip>
-    </mat-chip-set>
+  <div class="column chips">
+    <div>
+      <h3>Skills</h3>
+      <mat-chip-set>
+        <mat-chip *ngFor="let skill of skills">{{ skill }}</mat-chip>
+      </mat-chip-set>
+    </div>
+    <div>
+      <h3>Experience</h3>
+      <mat-chip-set>
+        <mat-chip *ngFor="let experience of experiences">{{ experience }}</mat-chip>
+      </mat-chip-set>
+    </div>
+    <div>
+      <h3>Education</h3>
+      <mat-chip-set>
+        <mat-chip *ngFor="let education of educations">{{ education }}</mat-chip>
+      </mat-chip-set>
+    </div>
   </div>
 </div>
 
