@@ -12,7 +12,7 @@ export class AboutComponent {
     "PHP", "Laravel", "SQL", "GraphQL", "MongoDB", "Git", "Docker", "Agile development"
   ];
   readonly experiences = [
-    "Full stack development at FOD Economie",
+    "Full stack developer at FOD Economie",
     "Teacher assistant at CodeFever"
   ];
   readonly educations = [
