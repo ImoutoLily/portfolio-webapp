@@ -1,6 +1,4 @@
-@use '@angular/material' as mat;
-
-@import "styles";
+@import "theme";
 
 .spacer {
   flex: 1 1 auto;
@@ -24,5 +22,5 @@ mat-toolbar {
 }
 
 .is-active {
-  outline: 2px solid mat.get-color-from-palette($portfolio-background, 500);
+  outline: 2px solid $highlight;
 }

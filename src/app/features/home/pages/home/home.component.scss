@@ -1,6 +1,4 @@
-@use '@angular/material' as mat;
-
-@import "styles";
+@import "theme";
 
 div.center {
   text-align: center;
@@ -15,7 +13,7 @@ div.center {
 }
 
 .primary-color {
-  color: mat.get-color-from-palette($portfolio-primary, 500)
+  color: $primary-foreground;
 }
 
 a:link, a:visited, a:hover, a:active {
