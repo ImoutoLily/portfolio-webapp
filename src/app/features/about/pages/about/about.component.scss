@@ -1,4 +1,4 @@
-div.info {
+div.about {
   display: flex;
   flex-direction: row;
 }
@@ -9,13 +9,13 @@ div.column {
   flex-direction: column;
 }
 
-div.intro {
+div.text {
   flex-grow: 3;
   padding-right: 75px;
   text-align: justify;
 }
 
-div.chips {
+div.data {
   flex-grow: 2;
 }
 
@@ -24,11 +24,11 @@ div.chips {
 }
 
 @media (max-width: 1000px) {
-  div.info {
+  div.about {
     flex-direction: column;
   }
 
-  div.intro {
+  div.text {
     padding-right: 0;
   }
 }
@@ -39,5 +39,5 @@ mat-chip {
 }
 
 #resume {
-  margin: 25px 0;
+  margin-top: 30px;
 }
