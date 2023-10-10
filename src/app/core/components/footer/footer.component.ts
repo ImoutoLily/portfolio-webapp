@@ -10,10 +10,12 @@ export class FooterComponent implements OnInit {
   emailAddress: string;
   githubUrl: string;
   linkedInUrl: string;
+  facebookUrl: string;
 
   ngOnInit(): void {
     this.emailAddress = environment.emailAddress;
     this.githubUrl = environment.githubUrl;
     this.linkedInUrl = environment.linkedInUrl;
+    this.facebookUrl = environment.facebookUrl;
   }
 }
