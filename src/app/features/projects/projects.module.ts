@@ -7,6 +7,7 @@ import { ProjectItemComponent } from './components/project-item/project-item.com
 import { ProjectListComponent } from './components/project-list/project-list.component';
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
+import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
 
 
@@ -21,6 +22,7 @@ import { MatListModule } from "@angular/material/list";
     ProjectsRoutingModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule,
     MatListModule
   ]
 })

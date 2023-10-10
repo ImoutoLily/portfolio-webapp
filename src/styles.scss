@@ -59,7 +59,7 @@ $portfolio-theme: mat.define-dark-theme((
 //@include mat.core-theme($portfolio-theme);
 @include mat.all-component-themes($portfolio-theme);
 
-$background-color: mat.get-color-from-palette(mat.$blue-gray-palette, 900);
+$background-color: mat.get-color-from-palette($portfolio-background, 900);
 $secondary-background-color: #2c3940;
 
 /* You can add global styles to this file, and also import other style files */
