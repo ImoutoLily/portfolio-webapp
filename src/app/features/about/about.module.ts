@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AboutRoutingModule } from './about-routing.module';
 import { AboutComponent } from './pages/about/about.component';
 import { MatChipsModule } from "@angular/material/chips";
+import { MatButtonModule } from "@angular/material/button";
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { MatChipsModule } from "@angular/material/chips";
   imports: [
     CommonModule,
     AboutRoutingModule,
-    MatChipsModule
+    MatChipsModule,
+    MatButtonModule
   ]
 })
 export class AboutModule { }

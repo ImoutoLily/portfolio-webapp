@@ -13,10 +13,29 @@ export class AboutComponent {
   ];
   readonly experiences = [
     "Full stack developer at FOD Economie",
-    "Teacher assistant at CodeFever"
+    "Teaching assistant at CodeFever"
   ];
   readonly educations = [
-    "Associate degree of Programming",
+    "Associate of Computer Programming",
     "Bachelor of Applied Computer Science (ongoing)"
   ];
+
+  readonly languages = [
+    "English", "Dutch"
+  ]
+
+  readonly birthDate = new Date(2002, 4, 25);
+
+  readonly age: number;
+
+  constructor() {
+    const today = new Date();
+
+    this.age = today.getFullYear() - this.birthDate.getFullYear();
+
+    if (today.getMonth() < this.birthDate.getMonth()
+      || (today.getMonth() == this.birthDate.getMonth() && today.getDate() < this.birthDate.getDate())) {
+      this.age--;
+    }
+  }
 }
