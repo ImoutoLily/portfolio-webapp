@@ -17,7 +17,7 @@ export class AboutComponent {
   ];
   readonly educations = [
     "Associate of Computer Programming",
-    "Bachelor of Applied Computer Science (ongoing)"
+    "Bachelor of Applied Computer Science"
   ];
 
   readonly languages = [
