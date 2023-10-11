@@ -110,7 +110,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "cname": "www.aurie.baby"
+            "cname": "www.lilyvandenbore.com"
           }
         }
       }
