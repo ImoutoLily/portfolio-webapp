@@ -1,5 +1,6 @@
 export const environment = {
   production: false,
+  projectTitle: "Dev Lily",
   githubUsername: "ImoutoLily",
   emailAddress: "lily.vandenbore@gmail.com",
   githubUrl: "https://github.com/ImoutoLily/",
