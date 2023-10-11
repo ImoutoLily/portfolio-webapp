@@ -19,10 +19,6 @@ div.data {
   flex-grow: 2;
 }
 
-.mat-list-item {
-  height: 26px !important;
-}
-
 @media (max-width: 1000px) {
   div.about {
     flex-direction: column;
@@ -35,7 +31,6 @@ div.data {
 
 mat-chip {
   height: 24px;
-  font-size: 12pt;
 }
 
 #resume {

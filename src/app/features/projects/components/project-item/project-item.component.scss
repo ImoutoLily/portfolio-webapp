@@ -2,11 +2,20 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
+span.spacer {
+  flex: 1 1 auto;
+}
+
 mat-card {
   margin: 20px;
-  height: 260px;
+  height: 15em;
 }
 
 mat-card-content {
-  height: 100% !important;
+  max-height: 8.4em;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  text-overflow: ellipsis !important;
 }
