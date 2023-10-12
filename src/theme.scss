@@ -40,6 +40,8 @@ $portfolio-warn: mat.define-palette(mat.$red-palette);
 
 $portfolio-background: mat.define-palette(mat.$blue-gray-palette);
 
+$portfolio-typography: mat.define-typography-config();
+
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
 $portfolio-theme: mat.define-dark-theme((
@@ -47,7 +49,8 @@ $portfolio-theme: mat.define-dark-theme((
     primary: $portfolio-primary,
     accent: $portfolio-accent,
     warn: $portfolio-warn,
-  )
+  ),
+  typegraphy: $portfolio-typography
 ));
 
 $primary-foreground: mat.get-color-from-palette($portfolio-primary, 500);
