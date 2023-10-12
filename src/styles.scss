@@ -41,3 +41,9 @@ h1, h2, h3, h4, h5, h6, h7, p, mat-card-title {
 mat-card, mat-chip {
   background-color: $secondary-background-color !important;
 }
+
+@media (max-width: 380px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
