@@ -9,7 +9,7 @@ export class AboutComponent {
   readonly skills = [
     "C", "Python", "FastAPI", "Java", "Spring Boot", "JavaScript / TypeScript", "Angular",
     "Express", "Node.js", "React", "C#", "ASP.NET", "Swift", "Kotlin", "Android Development",
-    "PHP", "Laravel", "SQL", "GraphQL", "MongoDB", "Git", "Docker", "Agile development"
+    "PHP", "Laravel", "SQL", "GraphQL", "MongoDB", "Git", "Docker", "Agile development", "TDD"
   ];
   readonly experiences = [
     "Full stack developer at FOD Economie",
