@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   readonly skills = [
-    "C", "Python", "FastAPI", "Java", "Spring Boot", "JavaScript / TypeScript", "Angular",
+    "C", "Python", "FastAPI", "Java", "Spring Boot", "JavaScript/TypeScript", "Angular",
     "Express", "Node.js", "React", "C#", "ASP.NET", "Swift", "Kotlin", "Android Development",
     "PHP", "Laravel", "SQL", "GraphQL", "MongoDB", "Git", "Docker", "Agile development", "TDD"
   ];
   readonly experiences = [
-    "Full stack developer at FOD Economie",
+    "Full stack developer at FOD Economy",
     "Teaching assistant at CodeFever"
   ];
   readonly educations = [
@@ -24,9 +24,9 @@ export class AboutComponent {
     "English", "Dutch"
   ]
 
-  readonly birthDate = new Date(2002, 4, 25);
-
   readonly age: number;
+
+  private readonly birthDate = new Date(2002, 4, 25);
 
   constructor() {
     const today = new Date();
