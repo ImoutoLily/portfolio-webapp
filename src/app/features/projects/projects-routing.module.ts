@@ -4,7 +4,8 @@ import { ProjectsComponent } from "./pages/projects/projects.component";
 import { environment } from "@environments/environment";
 
 const routes: Routes = [
-  { path: "", component: ProjectsComponent, title: `${environment.projectTitle} - Projects` }
+  { path: "", component: ProjectsComponent, title: `${environment.projectTitle} - Projects` },
+  { path: "**", redirectTo: "", pathMatch: "full" }
 ];
 
 @NgModule({
