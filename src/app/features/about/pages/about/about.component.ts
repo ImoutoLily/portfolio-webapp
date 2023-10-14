@@ -7,17 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   readonly skills = [
-    "C", "Python", "FastAPI", "Java", "Spring Boot", "JavaScript/TypeScript", "Angular",
-    "Express", "Node.js", "React", "C#", "ASP.NET", "Swift", "Kotlin", "Android Development",
-    "PHP", "Laravel", "SQL", "GraphQL", "MongoDB", "Git", "Docker", "Agile development", "TDD"
+    "Python", "FastAPI", "Java", "Spring Boot", "JavaScript/TypeScript", "Angular", "PrimeNG",
+    "Express", "Node.js", "React", "C#", "ASP.NET", "Kotlin", "C", "HTML/CSS", "Bootstrap", "Material UI", "SQL", "GraphQL",
+    "MongoDB", "Git", "Docker", "Linux", "Agile development", "TDD"
   ];
   readonly experiences = [
-    "Full stack developer at FOD Economy",
-    "Teaching assistant at CodeFever"
+    "Teaching assistant at CodeFever",
+    "Full stack developer at FOD Economy"
   ];
   readonly educations = [
-    "Associate of Computer Programming",
-    "Bachelor of Applied Computer Science"
+    "Bachelor of Applied Computer Science",
+    "Associate of Computer Programming"
   ];
 
   readonly languages = [
