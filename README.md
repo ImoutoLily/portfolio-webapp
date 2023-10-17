@@ -6,10 +6,10 @@ A live deployment of this website can be found [here](https://www.lilyvandenbore
 
 ![Preview image](preview.png)
 
-## Hire me
+## Hire me 💼
 
 I'm interested in back end or full stack developer positions **once** I graduate in June 2024.
 
 I'm open to both on-site jobs in Belgium and remote jobs internationally.
 
-You can find my resume [here](src/assets/files/resume.pdf).
+You can find my resume [here](src/assets/files/resume.pdf). 📃
