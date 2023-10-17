@@ -1,3 +1,11 @@
-<div class="projects">
-  <app-project-item [repository]="repository" *ngFor="let repository of repositories$ | async"></app-project-item>
-</div>
+<mat-grid-list [cols]="breakpoint" rowHeight="15.5em" gutterSize="1em" (window:resize)="onResize($event)">
+  <mat-grid-tile *ngFor="let repository of repositories$ | async">
+    <app-project-item [repository]="repository"></app-project-item>
+  </mat-grid-tile>
+  <mat-grid-tile *ngFor="let repository of repositories$ | async">
+    <app-project-item [repository]="repository"></app-project-item>
+  </mat-grid-tile>
+  <mat-grid-tile *ngFor="let repository of repositories$ | async">
+    <app-project-item [repository]="repository"></app-project-item>
+  </mat-grid-tile>
+</mat-grid-list>

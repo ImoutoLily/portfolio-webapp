@@ -1,20 +1,5 @@
-div.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-app-project-item {
-  flex: 0 0 32%;
-}
-
-@media (max-width: 1200px) and (min-width: 800px) {
+mat-grid-tile {
   app-project-item {
-    flex: 0 0 48.7%;
-  }
-}
-@media (max-width: 800px) {
-  app-project-item {
-    flex: 0 0 100%;
+    width: 100%;
   }
 }
