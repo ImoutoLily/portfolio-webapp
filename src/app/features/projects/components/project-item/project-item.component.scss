@@ -11,6 +11,11 @@ mat-card {
   height: 15.5em;
 }
 
+mat-card-title {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
 mat-card-content {
   max-height: 8.4em;
   -webkit-box-orient: vertical;
