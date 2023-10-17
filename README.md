@@ -12,4 +12,4 @@ I'm interested in back end or full stack developer positions **once** I graduate
 
 I'm open to both on-site jobs in Belgium and remote jobs internationally.
 
-You can find my resume [here](src/assets/files/resume.pdf). 📃
+You can find my resume [here](src/assets/files/resume.pdf).
