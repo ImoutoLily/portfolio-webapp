@@ -1,0 +1,59 @@
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$portfolio-primary: mat.define-palette(mat.$blue-palette);
+$portfolio-accent: mat.define-palette((
+  50: #fce3f1,
+  100: #f7b9db,
+  200: #f48ac3,
+  300: #f357aa,
+  400: #f32194,
+  500: #f5007e,
+  600: #e3007a,
+  700: #cc0073,
+  800: #b6006f,
+  900: #8d0066,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white
+  )
+));
+
+// The warn palette is optional (defaults to red).
+$portfolio-warn: mat.define-palette(mat.$red-palette);
+
+$portfolio-background: mat.define-palette(mat.$blue-gray-palette);
+
+$portfolio-typography: mat.define-typography-config();
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$portfolio-theme: mat.define-dark-theme((
+  color: (
+    primary: $portfolio-primary,
+    accent: $portfolio-accent,
+    warn: $portfolio-warn,
+  ),
+  typegraphy: $portfolio-typography
+));
+
+$primary-foreground: mat.get-color-from-palette($portfolio-primary, 500);
+$highlight: mat.get-color-from-palette($portfolio-background, 500);
+$background-color: mat.get-color-from-palette($portfolio-background, 900);
+$secondary-background-color: #2c3940;

@@ -1,0 +1,25 @@
+@import "theme";
+
+div.center {
+  text-align: center;
+  padding-top: 3em;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+  a {
+    margin: 0 0.3em 0.9em 0.3em;
+  }
+}
+
+.primary-color {
+  color: $primary-foreground;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+div.intro {
+  margin-bottom: 2em;
+}

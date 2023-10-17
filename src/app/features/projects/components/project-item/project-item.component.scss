@@ -1,0 +1,26 @@
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+span.spacer {
+  flex: 1 1 auto;
+}
+
+mat-card {
+  margin: 0.8em 0;
+  height: 15.5em;
+}
+
+mat-card-title {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+mat-card-content {
+  max-height: 8.4em;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  text-overflow: ellipsis !important;
+}

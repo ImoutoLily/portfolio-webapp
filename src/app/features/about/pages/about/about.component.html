@@ -1,0 +1,81 @@
+<div class="about">
+  <div class="column text">
+    <h3>Who am I</h3>
+    <p>
+      I'm Lily Vandenbore and I'm a {{ age }} year old passionate full stack developer who has been
+      programming since the age of 11. My primary focus is back end, but I also enjoy doing front end development.<br><br>
+
+      I believe that my passion and deeply ingrained interest in the world of software development is what makes me valuable.
+      It motivates me to learn technologies regardless of whether I have to or not. <br><br>
+
+      The majority of the developers I've met don't have a big interest in what they're doing. Some are in it for the money,
+      others because they believe there's a lot of job opportunities in the field.
+      People in the field of software development with a true passion is rare. But this passion is exactly what makes a programmer valuable,
+      because it's this same passion, that drives developers to grow and to continue learning as each day passes.
+    </p>
+    <h3>My history</h3>
+    <p>
+      When I first started my exciting programming journey, I learned to write code in both C and Python.
+      My first projects were nothing special, as I was brand new to the world of programming.
+      But I quickly discovered how much I truly love both programming and learning new technologies.<br><br>
+
+      Throughout the years, I've learned many new programming languages, technologies and ways to think about programming.<br><br>
+      During my journey, I also picked up some other relevant skills that I deem important.
+      Some of these include Linux systems, some basic ethical hacking, scripting and networking.<br><br>
+
+      When I was a young teen, I also went to CodeFever to follow some programming classes designed for younger people.
+      Although I was a bit ahead compared to my classmates due to how much time I spent programming, it was really nice
+      to be surrounded with other programmers, and to help my classmates when possible.<br><br>
+
+      Once I turned 18, I started my Associate of Computer Programming.
+      During this time, I learned some valuable technologies and made many friends with whom I worked together, which in turn helped me
+      grow as a developer and a team player.<br><br>
+
+      I also did an internship at FOD Economy as a full stack developer during my final year of the degree.
+      Here we used Spring Boot and Angular to develop the project. This was my first taste of what it's like
+      to work as a full stack developer on a real job, and I loved it.
+      </p>
+    <h3>
+      Where I'm currently at
+    </h3>
+    <p>
+      I am currently studying at VIVES Kortrijk to get a Bachelor of Applied Computer Science and
+      will graduate in 2024.<br><br>
+
+      I've always loved to help friends and people I meet online to both program and to help those who can program,
+      become even better. This combined with my past at CodeFever is why I'm currently working a student job at CodeFever as a teaching assistant.
+    </p>
+  </div>
+  <div class="column data">
+    <div>
+      <h3>Skills</h3>
+      <mat-chip-set>
+        <mat-chip *ngFor="let skill of skills">{{ skill }}</mat-chip>
+      </mat-chip-set>
+    </div>
+    <div>
+      <h3>Experience</h3>
+      <mat-chip-set>
+        <mat-chip *ngFor="let experience of experiences">{{ experience }}</mat-chip>
+      </mat-chip-set>
+    </div>
+    <div>
+      <h3>Education</h3>
+      <mat-chip-set>
+        <mat-chip *ngFor="let education of educations">{{ education }}</mat-chip>
+      </mat-chip-set>
+    </div>
+    <div>
+      <h3>Languages</h3>
+      <mat-chip-set>
+        <mat-chip *ngFor="let language of languages">{{ language }}</mat-chip>
+      </mat-chip-set>
+    </div>
+    <div id="resume">
+      <a mat-raised-button color="primary" href="/assets/files/resume.pdf" download="resume_lily_vandenbore.pdf">
+        My resume
+      </a>
+    </div>
+  </div>
+</div>
+
