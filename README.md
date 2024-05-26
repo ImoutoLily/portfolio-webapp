@@ -8,8 +8,8 @@ A live deployment of this website can be found [here](https://www.lilyvandenbore
 
 ## Hire me 💼
 
-I'm interested in back end or full stack developer positions **once** I graduate in June 2024.
+I'm interested in back end or full stack developer positions.
 
-I'm open to both on-site jobs in Belgium and remote jobs internationally.
+I'm open to both on-site jobs in Uppsala, Sweden and remote jobs internationally.
 
 You can find my resume [here](src/assets/files/resume.pdf).
